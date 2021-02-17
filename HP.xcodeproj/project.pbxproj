@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		ACA8A0E025DCB8510009C158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */; };
 		ACA8A0E225DCB8510009C158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */; };
-		ACA8A0E425DCB8510009C158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E325DCB8510009C158 /* ViewController.swift */; };
 		ACA8A0E725DCB8510009C158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0E525DCB8510009C158 /* Main.storyboard */; };
 		ACA8A0E925DCB8520009C158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0E825DCB8520009C158 /* Assets.xcassets */; };
 		ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboard */; };
 		ACA8A0F725DCB8520009C158 /* HPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0F625DCB8520009C158 /* HPTests.swift */; };
 		ACA8A10225DCB8520009C158 /* HPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A10125DCB8520009C158 /* HPUITests.swift */; };
+		CE0DEB2025DCE23600541B15 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */; };
+		CE0DEB2525DCE8EF00541B15 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */; };
+		CE0DEB2A25DCF8B000541B15 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2925DCF8B000541B15 /* Validation.swift */; };
+		CE0DEB2F25DD93A900541B15 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */; };
+		CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		ACA8A0DC25DCB8510009C158 /* HP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACA8A0E325DCB8510009C158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACA8A0E625DCB8510009C158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACA8A0E825DCB8520009C158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA8A0EB25DCB8520009C158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		ACA8A0FD25DCB8520009C158 /* HPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8A10125DCB8520009C158 /* HPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPUITests.swift; sourceTree = "<group>"; };
 		ACA8A10325DCB8520009C158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		CE0DEB2925DCF8B000541B15 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,12 @@
 			children = (
 				ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */,
 				ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */,
-				ACA8A0E325DCB8510009C158 /* ViewController.swift */,
+				CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */,
+				CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */,
 				ACA8A0E525DCB8510009C158 /* Main.storyboard */,
+				CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */,
+				CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */,
+				CE0DEB2925DCF8B000541B15 /* Validation.swift */,
 				ACA8A0E825DCB8520009C158 /* Assets.xcassets */,
 				ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboard */,
 				ACA8A0ED25DCB8520009C158 /* Info.plist */,
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA8A0E425DCB8510009C158 /* ViewController.swift in Sources */,
+				CE0DEB2525DCE8EF00541B15 /* DesignableView.swift in Sources */,
 				ACA8A0E025DCB8510009C158 /* AppDelegate.swift in Sources */,
 				ACA8A0E225DCB8510009C158 /* SceneDelegate.swift in Sources */,
+				CE0DEB2A25DCF8B000541B15 /* Validation.swift in Sources */,
+				CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */,
+				CE0DEB2025DCE23600541B15 /* LogInViewController.swift in Sources */,
+				CE0DEB2F25DD93A900541B15 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
