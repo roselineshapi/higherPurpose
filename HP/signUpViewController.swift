@@ -31,18 +31,33 @@ class signUpViewController: UIViewController {
 
     @IBAction func signUpButtonTaped(_ sender: Any) {
         if firstName.text?.isEmpty == true{
-            print("No text in the first name field")
+            let alertController = UIAlertController(title: "Field required", message: "First Name is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         
         if lastName.text?.isEmpty == true{
-            print("No text in the second name field")
+            let alertController = UIAlertController(title: "Field required", message: "First Name is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         if email.text?.isEmpty == true{
-            print("No text in the email field")
-            return
+            let alertController = UIAlertController(title: "Field required", message: "Email Name is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         if password.text?.isEmpty == true{
-            print("No text in the password field")
+            let alertController = UIAlertController(title: "Field required", message: "Password Name is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         
         
