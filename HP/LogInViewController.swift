@@ -28,6 +28,14 @@ class LogInViewController: UIViewController {
         present(HomeScreenViewController(), animated: true)
     }
     
+    @IBAction func signUpButtonTaapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "signUp")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+        
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if emailField.resignFirstResponder() && emailField.text == ""{
