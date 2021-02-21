@@ -17,9 +17,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
 
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="iuL-5N-u1t">
-                                <rect key="frame" x="66" y="180" width="298" height="360"/>
-
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="OZf-cB-frx">
                                 <rect key="frame" x="51" y="219" width="302" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

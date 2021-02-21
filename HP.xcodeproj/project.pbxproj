@@ -12,7 +12,7 @@
 		ACA8A0E225DCB8510009C158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */; };
 		ACA8A0E725DCB8510009C158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0E525DCB8510009C158 /* Main.storyboard */; };
 		ACA8A0E925DCB8520009C158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0E825DCB8520009C158 /* Assets.xcassets */; };
-		ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboard */; };
+		ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboad in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */; };
 		ACA8A0F725DCB8520009C158 /* HPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0F625DCB8520009C158 /* HPTests.swift */; };
 		ACA8A10225DCB8520009C158 /* HPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A10125DCB8520009C158 /* HPUITests.swift */; };
 		ACA8A12825DDF4750009C158 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A12725DDF4750009C158 /* signUpViewController.swift */; };
@@ -56,7 +56,7 @@
 		ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACA8A0E625DCB8510009C158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACA8A0E825DCB8520009C158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACA8A0EB25DCB8520009C158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACA8A0EB25DCB8520009C158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/LaunchScreen.storyboad; sourceTree = "<group>"; };
 		ACA8A0ED25DCB8520009C158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA8A0F225DCB8520009C158 /* HPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8A0F625DCB8520009C158 /* HPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPTests.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */,
 				CE0DEB2925DCF8B000541B15 /* Validation.swift */,
 				ACA8A0E825DCB8520009C158 /* Assets.xcassets */,
-				ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboard */,
+				ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */,
 				ACA8A0ED25DCB8520009C158 /* Info.plist */,
 			);
 			path = HP;
@@ -294,7 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboard in Resources */,
+				ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboad in Resources */,
 				ACA8A12D25DE07E00009C158 /* GoogleService-Info.plist in Resources */,
 				ACA8A0E925DCB8520009C158 /* Assets.xcassets in Resources */,
 				ACA8A0E725DCB8510009C158 /* Main.storyboard in Resources */,
@@ -476,12 +476,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboard */ = {
+		ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ACA8A0EB25DCB8520009C158 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchScreen.storyboad;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
