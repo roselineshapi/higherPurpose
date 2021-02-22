@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
 
@@ -56,17 +57,56 @@ class LogInViewController: UIViewController {
             }
 
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  
+    @IBAction func loginTapped(_ sender: Any) {
+        
+        let email = (emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+        let password = (passField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+        
+        
+        if email == "" && password == ""{
+            let alertController = UIAlertController(title: "Field required", message: "Email & password are required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        if email == ""{
+            let alertController = UIAlertController(title: "Field required", message: "Email is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        if password == ""{
+            let alertController = UIAlertController(title: "Field required", message: "Password is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            if self != nil{
+                let alertController = UIAlertController(title: "Authentication Erros", message: "Email and password do not match", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+                alertController.addAction(defaultAction)
+                self!.present(alertController, animated: true, completion: nil)
+                
+            } else {
+                
+                let homeViewController = self?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeScreenViewController
+                
+                self!.view.window?.rootViewController = homeViewController
+                self!.view.window?.makeKeyAndVisible()
+                
+                }
+          // ...
+        }
     }
-    */
-
-
 }
 
 extension LogInViewController: UITextFieldDelegate{
