@@ -21,11 +21,18 @@ class signUpViewController: UIViewController {
     
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet weak var confirmPass: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        firstName.delegate = self
+        lastName.delegate = self
+        email.delegate = self
+        password.delegate = self
+        confirmPass.delegate = self
     }
     
 
@@ -39,21 +46,46 @@ class signUpViewController: UIViewController {
         }
         
         if lastName.text?.isEmpty == true{
-            let alertController = UIAlertController(title: "Field required", message: "First Name is required", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Field required", message: "Last Name is required", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
         }
         if email.text?.isEmpty == true{
-            let alertController = UIAlertController(title: "Field required", message: "Email Name is required", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Field required", message: "Email is required", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
         }
         if password.text?.isEmpty == true{
-            let alertController = UIAlertController(title: "Field required", message: "Password Name is required", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Field required", message: "Password is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+        
+        if confirmPass.text?.isEmpty == true{
+            let alertController = UIAlertController(title: "Field required", message: "Password confirmtation is required", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        if confirmPass.text! != password.text!{
+            let alertController = UIAlertController(title: "Password", message: "Passwords do not match", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        if firstName.text?.isEmpty == true && lastName.text?.isEmpty == true && email.text?.isEmpty == true && password.text?.isEmpty == true && confirmPass.text?.isEmpty == true {
+            let alertController = UIAlertController(title: "Field Required", message: "Please fill all fields", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         
             alertController.addAction(defaultAction)
@@ -61,6 +93,15 @@ class signUpViewController: UIViewController {
         }
         
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        firstName.resignFirstResponder()
+        lastName.resignFirstResponder()
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+        confirmPass.resignFirstResponder()
     }
     
     
@@ -70,23 +111,24 @@ class signUpViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
     func signUp(){
         Auth.auth().createUser(withEmail: email.text!, password: password.text!){(authResult, error) in
             guard let user = authResult?.user, error == nil else{
-                print("Error\(error?.localizedDescription)")
+                print("Error\(String(describing: error?.localizedDescription))")
                 return
             }
             
         }
     }
+}
+
+extension signUpViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
 }

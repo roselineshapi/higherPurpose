@@ -23,6 +23,7 @@
 		CE0DEB2A25DCF8B000541B15 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2925DCF8B000541B15 /* Validation.swift */; };
 		CE0DEB2F25DD93A900541B15 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */; };
 		CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */; };
+		CE58279A25E3345C00FFD13B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58279925E3345C00FFD13B /* Constants.swift */; };
 		E30F92BD140E7040C7E3A461 /* Pods_HP_HPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657B3B2E6F697BFD2FD571F /* Pods_HP_HPUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		CE0DEB2925DCF8B000541B15 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CE58279925E3345C00FFD13B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E37F3C8F5A7CDE779973DA8F /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */,
 				ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */,
 				CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */,
+				CE58279925E3345C00FFD13B /* Constants.swift */,
 				CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */,
 				ACA8A0E525DCB8510009C158 /* Main.storyboard */,
 				ACA8A12725DDF4750009C158 /* signUpViewController.swift */,
@@ -433,6 +436,7 @@
 				CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */,
 				CE0DEB2025DCE23600541B15 /* LogInViewController.swift in Sources */,
 				CE0DEB2F25DD93A900541B15 /* HomeScreenViewController.swift in Sources */,
+				CE58279A25E3345C00FFD13B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
