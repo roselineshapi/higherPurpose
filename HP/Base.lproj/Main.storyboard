@@ -495,12 +495,12 @@
             </objects>
             <point key="canvasLocation" x="2013.8461538461538" y="763.50710900473928"/>
         </scene>
-        <!--Home Screen View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="qni-lg-CL5">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="QHx-ZB-WSe" customClass="HomeScreenViewController" customModule="HP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="QHx-ZB-WSe" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7HL-gE-jDl">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMd-pa-g8I">
@@ -602,7 +602,7 @@
     </scenes>
     <resources>
         <image name="HigherPurposeLogo-1024" width="1024" height="1024"/>
-        <image name="person" catalog="system" width="32" height="32"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
