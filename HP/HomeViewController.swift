@@ -1,13 +1,13 @@
 //
-//  HomeScreenViewController.swift
+//  HomeViewController.swift
 //  HP
 //
-//  Created by user on 2/17/21.
+//  Created by user on 2/24/21.
 //
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

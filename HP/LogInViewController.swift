@@ -25,9 +25,9 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func didTapButtom(){
-        present(HomeScreenViewController(), animated: true)
-    }
+//    @IBAction func didTapButtom(){
+//        present(HomeScreenViewController(), animated: true)
+//    }
     
     @IBAction func signUpButtonTaapped(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -89,19 +89,19 @@ class LogInViewController: UIViewController {
         }
         
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-            if self != nil{
-                let alertController = UIAlertController(title: "Authentication Erros", message: "Email and password do not match", preferredStyle: .alert)
+            if error != nil{
+                let alertController = UIAlertController(title: "Authentication Error", message: "Email and password do not match", preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                            
+
                 alertController.addAction(defaultAction)
                 self!.present(alertController, animated: true, completion: nil)
                 
             } else {
                 
-                let homeViewController = self?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeScreenViewController
-                
-                self!.view.window?.rootViewController = homeViewController
-                self!.view.window?.makeKeyAndVisible()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(identifier: "HomeVC")
+                vc.modalPresentationStyle = .overFullScreen
+                self!.present(vc, animated: true)
                 
                 }
           // ...

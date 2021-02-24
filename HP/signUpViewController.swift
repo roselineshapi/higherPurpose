@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+
 class signUpViewController: UIViewController {
 
     @IBOutlet weak var firstName: UITextField!
@@ -114,10 +115,15 @@ class signUpViewController: UIViewController {
                         }
                       
                     }
-                        let alertController = UIAlertController(title: "success", message: "Your account was successfully created", preferredStyle: .alert)
-                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                        alertController.addAction(defaultAction)
-                        self.present(alertController, animated: true, completion: nil)
+//                    let alertController = UIAlertController(title: "Success", message: "Your account was successfully created", preferredStyle: .alert)
+//                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//                    alertController.addAction(defaultAction)
+//                    self.present(alertController, animated: true, completion: nil)
+//
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(identifier: "HomeVC")
+                    vc.modalPresentationStyle = .overFullScreen
+                    self.present(vc, animated: true)
 
                 }
             }
