@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B674FD088410D6A0A013E1D /* Pods_HPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAC6D6613EB4E910FBB7CF2 /* Pods_HPTests.framework */; };
+		10C54EAA0E544D6935E351D2 /* Pods_HP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6FBB7D14198519AA32BA18 /* Pods_HP.framework */; };
+		16B509CB92C35641C3AE484F /* Pods_HP_HPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1930C6B0E75F599FEF8658F /* Pods_HP_HPUITests.framework */; };
+		75723D797FA1BD1E88A15D97 /* Pods_HPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A134B2497BC05D556F8F4664 /* Pods_HPTests.framework */; };
+		AC878E2D25E49B7F00122D31 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC878E2C25E49B7F00122D31 /* Utilities.swift */; };
 		ACA8A0E025DCB8510009C158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */; };
 		ACA8A0E225DCB8510009C158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */; };
 		ACA8A0E725DCB8510009C158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0E525DCB8510009C158 /* Main.storyboard */; };
@@ -17,14 +20,12 @@
 		ACA8A10225DCB8520009C158 /* HPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A10125DCB8520009C158 /* HPUITests.swift */; };
 		ACA8A12825DDF4750009C158 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A12725DDF4750009C158 /* signUpViewController.swift */; };
 		ACA8A12D25DE07E00009C158 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A12C25DE07E00009C158 /* GoogleService-Info.plist */; };
-		C1F47D43B4CC36764E42EE7B /* Pods_HP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A489F55831DB1009435350B /* Pods_HP.framework */; };
 		CE0DEB2025DCE23600541B15 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */; };
 		CE0DEB2525DCE8EF00541B15 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */; };
 		CE0DEB2A25DCF8B000541B15 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2925DCF8B000541B15 /* Validation.swift */; };
 		CE0DEB2F25DD93A900541B15 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */; };
 		CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */; };
 		CE58279A25E3345C00FFD13B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE58279925E3345C00FFD13B /* Constants.swift */; };
-		E30F92BD140E7040C7E3A461 /* Pods_HP_HPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5657B3B2E6F697BFD2FD571F /* Pods_HP_HPUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C86F4DC6BEB9C5346F5B91D /* Pods-HPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.debug.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B355BBB92DC374DDDFFC66E /* Pods-HP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.release.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.release.xcconfig"; sourceTree = "<group>"; };
-		41B86A0CEDC21886B82450B4 /* Pods-HP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.debug.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.debug.xcconfig"; sourceTree = "<group>"; };
-		4AD5966B63A251D149FECB28 /* Pods-HPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.release.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.release.xcconfig"; sourceTree = "<group>"; };
-		5657B3B2E6F697BFD2FD571F /* Pods_HP_HPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP_HPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69089B389690590D1C036D14 /* Pods-HP-HPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.debug.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A489F55831DB1009435350B /* Pods_HP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A6FBB7D14198519AA32BA18 /* Pods_HP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10087C7E5A3979D3F5FCB338 /* Pods-HP-HPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.debug.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B455210AE46401006C01425 /* Pods-HP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.release.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.release.xcconfig"; sourceTree = "<group>"; };
+		A134B2497BC05D556F8F4664 /* Pods_HPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC878E2C25E49B7F00122D31 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		ACA8A0DC25DCB8510009C158 /* HP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,14 +66,17 @@
 		ACA8A10325DCB8520009C158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA8A12725DDF4750009C158 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		ACA8A12C25DE07E00009C158 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		BDAC6D6613EB4E910FBB7CF2 /* Pods_HPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9153032EEC34161A1D84F9F /* Pods-HPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.release.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF5A7AD8F387028A2A615450 /* Pods-HP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.debug.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		CE0DEB2925DCF8B000541B15 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		CE0DEB2E25DD93A900541B15 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CE58279925E3345C00FFD13B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E37F3C8F5A7CDE779973DA8F /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1930C6B0E75F599FEF8658F /* Pods_HP_HPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP_HPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.debug.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F47D43B4CC36764E42EE7B /* Pods_HP.framework in Frameworks */,
+				10C54EAA0E544D6935E351D2 /* Pods_HP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B674FD088410D6A0A013E1D /* Pods_HPTests.framework in Frameworks */,
+				75723D797FA1BD1E88A15D97 /* Pods_HPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,32 +100,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E30F92BD140E7040C7E3A461 /* Pods_HP_HPUITests.framework in Frameworks */,
+				16B509CB92C35641C3AE484F /* Pods_HP_HPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		350146B2FA368995C74D6FA7 /* Frameworks */ = {
+		320F41E5EF6C93AB574F2FCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9A489F55831DB1009435350B /* Pods_HP.framework */,
-				5657B3B2E6F697BFD2FD571F /* Pods_HP_HPUITests.framework */,
-				BDAC6D6613EB4E910FBB7CF2 /* Pods_HPTests.framework */,
+				0A6FBB7D14198519AA32BA18 /* Pods_HP.framework */,
+				D1930C6B0E75F599FEF8658F /* Pods_HP_HPUITests.framework */,
+				A134B2497BC05D556F8F4664 /* Pods_HPTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC878E2B25E49B3400122D31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC878E2C25E49B7F00122D31 /* Utilities.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		ACA8A0D325DCB8510009C158 = {
 			isa = PBXGroup;
 			children = (
+				AC878E2B25E49B3400122D31 /* Helpers */,
 				ACA8A0DE25DCB8510009C158 /* HP */,
 				ACA8A0F525DCB8520009C158 /* HPTests */,
 				ACA8A10025DCB8520009C158 /* HPUITests */,
 				ACA8A0DD25DCB8510009C158 /* Products */,
 				F86863F47B09C4B05FA825E3 /* Pods */,
-				350146B2FA368995C74D6FA7 /* Frameworks */,
+				320F41E5EF6C93AB574F2FCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,7 +151,6 @@
 		ACA8A0DE25DCB8510009C158 /* HP */ = {
 			isa = PBXGroup;
 			children = (
-				ACA8A12C25DE07E00009C158 /* GoogleService-Info.plist */,
 				ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */,
 				ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */,
 				CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */,
@@ -152,6 +162,7 @@
 				CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */,
 				CE0DEB2925DCF8B000541B15 /* Validation.swift */,
 				ACA8A0E825DCB8520009C158 /* Assets.xcassets */,
+				ACA8A12C25DE07E00009C158 /* GoogleService-Info.plist */,
 				ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */,
 				ACA8A0ED25DCB8520009C158 /* Info.plist */,
 			);
@@ -179,12 +190,12 @@
 		F86863F47B09C4B05FA825E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				41B86A0CEDC21886B82450B4 /* Pods-HP.debug.xcconfig */,
-				3B355BBB92DC374DDDFFC66E /* Pods-HP.release.xcconfig */,
-				69089B389690590D1C036D14 /* Pods-HP-HPUITests.debug.xcconfig */,
-				E37F3C8F5A7CDE779973DA8F /* Pods-HP-HPUITests.release.xcconfig */,
-				2C86F4DC6BEB9C5346F5B91D /* Pods-HPTests.debug.xcconfig */,
-				4AD5966B63A251D149FECB28 /* Pods-HPTests.release.xcconfig */,
+				BF5A7AD8F387028A2A615450 /* Pods-HP.debug.xcconfig */,
+				2B455210AE46401006C01425 /* Pods-HP.release.xcconfig */,
+				10087C7E5A3979D3F5FCB338 /* Pods-HP-HPUITests.debug.xcconfig */,
+				F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */,
+				DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */,
+				B9153032EEC34161A1D84F9F /* Pods-HPTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -196,11 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA8A10625DCB8520009C158 /* Build configuration list for PBXNativeTarget "HP" */;
 			buildPhases = (
-				65D00041A0E4E2416DC4CC90 /* [CP] Check Pods Manifest.lock */,
+				84EF943C9A0885DE036BF97C /* [CP] Check Pods Manifest.lock */,
 				ACA8A0D825DCB8510009C158 /* Sources */,
 				ACA8A0D925DCB8510009C158 /* Frameworks */,
 				ACA8A0DA25DCB8510009C158 /* Resources */,
-				FF8B227A9FB269AE97509B0D /* [CP] Embed Pods Frameworks */,
+				AC3EC77A830CA0AC59D317E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,7 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA8A10925DCB8520009C158 /* Build configuration list for PBXNativeTarget "HPTests" */;
 			buildPhases = (
-				5B61B7C8942D745710646450 /* [CP] Check Pods Manifest.lock */,
+				15E91F48909C178BBA65E1E4 /* [CP] Check Pods Manifest.lock */,
 				ACA8A0EE25DCB8520009C158 /* Sources */,
 				ACA8A0EF25DCB8520009C158 /* Frameworks */,
 				ACA8A0F025DCB8520009C158 /* Resources */,
@@ -234,11 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA8A10C25DCB8520009C158 /* Build configuration list for PBXNativeTarget "HPUITests" */;
 			buildPhases = (
-				9AA2AFBB1F238BEA183631D4 /* [CP] Check Pods Manifest.lock */,
+				479B8FF66BD294C42AA32197 /* [CP] Check Pods Manifest.lock */,
 				ACA8A0F925DCB8520009C158 /* Sources */,
 				ACA8A0FA25DCB8520009C158 /* Frameworks */,
 				ACA8A0FB25DCB8520009C158 /* Resources */,
-				567891EAD4B7023F043FBBC3 /* [CP] Embed Pods Frameworks */,
+				A60636E6A351587E15180387 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,24 +332,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		567891EAD4B7023F043FBBC3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B61B7C8942D745710646450 /* [CP] Check Pods Manifest.lock */ = {
+		15E91F48909C178BBA65E1E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,29 +354,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65D00041A0E4E2416DC4CC90 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HP-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AA2AFBB1F238BEA183631D4 /* [CP] Check Pods Manifest.lock */ = {
+		479B8FF66BD294C42AA32197 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -404,7 +376,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF8B227A9FB269AE97509B0D /* [CP] Embed Pods Frameworks */ = {
+		84EF943C9A0885DE036BF97C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A60636E6A351587E15180387 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC3EC77A830CA0AC59D317E2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,6 +447,7 @@
 				CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */,
 				CE0DEB2025DCE23600541B15 /* LogInViewController.swift in Sources */,
 				CE0DEB2F25DD93A900541B15 /* HomeScreenViewController.swift in Sources */,
+				AC878E2D25E49B7F00122D31 /* Utilities.swift in Sources */,
 				CE58279A25E3345C00FFD13B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,12 +621,14 @@
 		};
 		ACA8A10725DCB8520009C158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41B86A0CEDC21886B82450B4 /* Pods-HP.debug.xcconfig */;
+			baseConfigurationReference = BF5A7AD8F387028A2A615450 /* Pods-HP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FFLCQ69D8;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = HP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,12 +643,13 @@
 		};
 		ACA8A10825DCB8520009C158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B355BBB92DC374DDDFFC66E /* Pods-HP.release.xcconfig */;
+			baseConfigurationReference = 2B455210AE46401006C01425 /* Pods-HP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FFLCQ69D8;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = HP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -650,7 +665,7 @@
 		};
 		ACA8A10A25DCB8520009C158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C86F4DC6BEB9C5346F5B91D /* Pods-HPTests.debug.xcconfig */;
+			baseConfigurationReference = DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -673,7 +688,7 @@
 		};
 		ACA8A10B25DCB8520009C158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AD5966B63A251D149FECB28 /* Pods-HPTests.release.xcconfig */;
+			baseConfigurationReference = B9153032EEC34161A1D84F9F /* Pods-HPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -696,7 +711,7 @@
 		};
 		ACA8A10D25DCB8520009C158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69089B389690590D1C036D14 /* Pods-HP-HPUITests.debug.xcconfig */;
+			baseConfigurationReference = 10087C7E5A3979D3F5FCB338 /* Pods-HP-HPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -717,7 +732,7 @@
 		};
 		ACA8A10E25DCB8520009C158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E37F3C8F5A7CDE779973DA8F /* Pods-HP-HPUITests.release.xcconfig */;
+			baseConfigurationReference = F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
