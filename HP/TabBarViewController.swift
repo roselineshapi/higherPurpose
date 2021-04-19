@@ -14,6 +14,11 @@ class TabBarViewController: UITabBarController {
 
         // Do any additional setup after loading the view.'
         
+        
+        tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
+        tabBar.layer.shadowRadius = 5
+        tabBar.layer.shadowColor = UIColor.black.cgColor
+        tabBar.layer.shadowOpacity = 0.5
     }
     
 

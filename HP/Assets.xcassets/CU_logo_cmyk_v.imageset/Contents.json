@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "CU_logo_cmyk_v.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

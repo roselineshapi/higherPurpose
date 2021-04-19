@@ -99,7 +99,7 @@ class LogInViewController: UIViewController {
             } else {
                 
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(identifier: "HomeVC")
+                let vc = storyboard.instantiateViewController(identifier: "home")
                 vc.modalPresentationStyle = .overFullScreen
                 self!.present(vc, animated: true)
                 
