@@ -56,7 +56,7 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
         bizTypeDD.optionArray = ["Coporate(Inc.)", "Limited Liability Company(LLC)", "General Partnership", "Limited Liability Partnership(LLP)", "Sole Proprietorship", "Other"]
         bizCatDD.optionArray = ["Food/Agriculture", "Education", "Health/Wellness", "Art/Culture"]
         creditDD.optionArray = ["300-599", "600-649", "650-699", "700-749", "750-799", "800-850"]
-        fundingDD.optionArray = ["0-10000", "10000-30000", "30000-75000", "75000-100000", "100000-300000", "300000-500000", "500000+"]
+        fundingDD.optionArray = ["$0-$10,000", "$10,000-$30,000", "$30,000-$75,000", "$75,000-$100,000", "$100,000-$300,000", "$300,000-$500,000", "$500,000+"]
         //Its Id Values and its optional
 //        genderDD.optionIds = [1,23,54,22]
 
