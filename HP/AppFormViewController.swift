@@ -68,6 +68,7 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
 //        }
         
         
+        // Setting Boderlines and Placeholders for businessDes and Funds Utilization UITextView
         let borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         businessTextView.layer.borderWidth = 0.5
         businessTextView.layer.borderColor = borderColor.cgColor

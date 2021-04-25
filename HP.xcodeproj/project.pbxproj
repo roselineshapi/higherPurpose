@@ -28,6 +28,9 @@
 		CEDD6608260D799A00ADA7D8 /* AppFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD6607260D799A00ADA7D8 /* AppFormViewController.swift */; };
 		CEDD664D262BDACA00ADA7D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDD664C262BDACA00ADA7D8 /* Main.storyboard */; };
 		CEDD666F262CFAB600ADA7D8 /* PartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD666E262CFAB500ADA7D8 /* PartnerViewController.swift */; };
+		CEDD66812635E3C000ADA7D8 /* PartnersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */; };
+		CEDD66892635E75900ADA7D8 /* Partners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD66882635E75900ADA7D8 /* Partners.swift */; };
+		CEDD668E2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		CEDD6607260D799A00ADA7D8 /* AppFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFormViewController.swift; sourceTree = "<group>"; };
 		CEDD664C262BDACA00ADA7D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CEDD666E262CFAB500ADA7D8 /* PartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerViewController.swift; sourceTree = "<group>"; };
+		CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewController.swift; sourceTree = "<group>"; };
+		CEDD66882635E75900ADA7D8 /* Partners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partners.swift; sourceTree = "<group>"; };
+		CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1930C6B0E75F599FEF8658F /* Pods_HP_HPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP_HPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.debug.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +169,9 @@
 				CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */,
 				CEDD6607260D799A00ADA7D8 /* AppFormViewController.swift */,
 				CEDD664C262BDACA00ADA7D8 /* Main.storyboard */,
+				CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */,
+				CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */,
+				CEDD66882635E75900ADA7D8 /* Partners.swift */,
 				CEDD666E262CFAB500ADA7D8 /* PartnerViewController.swift */,
 				ACA8A12725DDF4750009C158 /* signUpViewController.swift */,
 				CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */,
@@ -448,13 +457,16 @@
 				CEDD6608260D799A00ADA7D8 /* AppFormViewController.swift in Sources */,
 				CEDD666F262CFAB600ADA7D8 /* PartnerViewController.swift in Sources */,
 				CE0DEB2525DCE8EF00541B15 /* DesignableView.swift in Sources */,
+				CEDD66812635E3C000ADA7D8 /* PartnersCollectionViewController.swift in Sources */,
 				ACA8A0E025DCB8510009C158 /* AppDelegate.swift in Sources */,
 				ACA8A12825DDF4750009C158 /* signUpViewController.swift in Sources */,
 				ACA8A0E225DCB8510009C158 /* SceneDelegate.swift in Sources */,
 				CE0DEB2A25DCF8B000541B15 /* Validation.swift in Sources */,
 				CEDD660025E710DA00ADA7D8 /* HomeViewController.swift in Sources */,
 				CE0DEB3F25DDB91000541B15 /* TabBarViewController.swift in Sources */,
+				CEDD66892635E75900ADA7D8 /* Partners.swift in Sources */,
 				CE0DEB2025DCE23600541B15 /* LogInViewController.swift in Sources */,
+				CEDD668E2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift in Sources */,
 				AC878E2D25E49B7F00122D31 /* Utilities.swift in Sources */,
 				CE58279A25E3345C00FFD13B /* Constants.swift in Sources */,
 			);
