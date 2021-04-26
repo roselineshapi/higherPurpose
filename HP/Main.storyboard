@@ -666,31 +666,34 @@
                                                 <constraint firstAttribute="width" constant="190" id="UzV-gu-NxX"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGT-Ua-ccL">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dE-U8-yIs">
                                             <rect key="frame" x="0.0" y="165" width="190" height="35"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="ga0-XA-S2x"/>
-                                                <constraint firstAttribute="width" constant="190" id="my6-4Z-uHA"/>
+                                                <constraint firstAttribute="width" constant="190" id="SN8-zv-veJ"/>
+                                                <constraint firstAttribute="height" constant="35" id="y67-KF-ILi"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="13"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnTapped:" destination="fH2-dv-2Dv" eventType="touchUpInside" id="ZfR-4q-Ch8"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="ZGT-Ua-ccL" secondAttribute="trailing" id="7ci-Yj-gXl"/>
-                                        <constraint firstItem="ZGT-Ua-ccL" firstAttribute="top" secondItem="HnI-yF-Tgs" secondAttribute="bottom" id="DqX-48-3n7"/>
-                                        <constraint firstAttribute="bottom" secondItem="ZGT-Ua-ccL" secondAttribute="bottom" id="JeL-hE-lbr"/>
-                                        <constraint firstItem="ZGT-Ua-ccL" firstAttribute="leading" secondItem="Za2-mX-vVh" secondAttribute="leading" id="LH4-qq-uk1"/>
+                                        <constraint firstItem="6dE-U8-yIs" firstAttribute="top" secondItem="HnI-yF-Tgs" secondAttribute="bottom" id="0eU-08-O83"/>
+                                        <constraint firstAttribute="trailing" secondItem="6dE-U8-yIs" secondAttribute="trailing" id="Cyr-mB-vlt"/>
+                                        <constraint firstAttribute="bottom" secondItem="6dE-U8-yIs" secondAttribute="bottom" id="DKe-P3-SXg"/>
                                         <constraint firstItem="HnI-yF-Tgs" firstAttribute="top" secondItem="Za2-mX-vVh" secondAttribute="top" id="RzS-E6-88i"/>
                                         <constraint firstItem="HnI-yF-Tgs" firstAttribute="leading" secondItem="Za2-mX-vVh" secondAttribute="leading" id="TFI-hc-2Yj"/>
-                                        <constraint firstItem="ZGT-Ua-ccL" firstAttribute="top" secondItem="HnI-yF-Tgs" secondAttribute="bottom" id="prz-Sx-ES4"/>
+                                        <constraint firstItem="6dE-U8-yIs" firstAttribute="leading" secondItem="Za2-mX-vVh" secondAttribute="leading" id="rEB-oB-8ge"/>
                                         <constraint firstAttribute="trailing" secondItem="HnI-yF-Tgs" secondAttribute="trailing" id="uXd-lC-xzJ"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
+                                    <outlet property="pButton" destination="6dE-U8-yIs" id="PhT-79-l2c"/>
                                     <outlet property="pImage" destination="HnI-yF-Tgs" id="lbU-6r-xLB"/>
-                                    <outlet property="pLabel" destination="ZGT-Ua-ccL" id="mrf-OV-nkq"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -700,9 +703,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Partners" id="b8T-NK-ijP"/>
-                    <connections>
-                        <outlet property="pLabel" destination="ZGT-Ua-ccL" id="j2R-bl-faU"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leY-P1-eMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -731,11 +731,11 @@
             </objects>
             <point key="canvasLocation" x="4480" y="-1118"/>
         </scene>
-        <!--Item-->
+        <!--Partners-->
         <scene sceneID="7Nj-TF-vJQ">
             <objects>
                 <navigationController id="hTy-Dv-4SV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="personalhotspot" catalog="system" selectedImage="personalhotspot" id="rcB-Fd-bqt"/>
+                    <tabBarItem key="tabBarItem" title="Partners" image="personalhotspot" catalog="system" selectedImage="personalhotspot" id="rcB-Fd-bqt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E6c-Ri-sdo">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

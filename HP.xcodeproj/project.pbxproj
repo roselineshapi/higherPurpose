@@ -27,7 +27,6 @@
 		CEDD660025E710DA00ADA7D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD65FF25E710DA00ADA7D8 /* HomeViewController.swift */; };
 		CEDD6608260D799A00ADA7D8 /* AppFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD6607260D799A00ADA7D8 /* AppFormViewController.swift */; };
 		CEDD664D262BDACA00ADA7D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDD664C262BDACA00ADA7D8 /* Main.storyboard */; };
-		CEDD666F262CFAB600ADA7D8 /* PartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD666E262CFAB500ADA7D8 /* PartnerViewController.swift */; };
 		CEDD66812635E3C000ADA7D8 /* PartnersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */; };
 		CEDD66892635E75900ADA7D8 /* Partners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD66882635E75900ADA7D8 /* Partners.swift */; };
 		CEDD668E2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */; };
@@ -80,7 +79,6 @@
 		CEDD65FF25E710DA00ADA7D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CEDD6607260D799A00ADA7D8 /* AppFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFormViewController.swift; sourceTree = "<group>"; };
 		CEDD664C262BDACA00ADA7D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CEDD666E262CFAB500ADA7D8 /* PartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerViewController.swift; sourceTree = "<group>"; };
 		CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewController.swift; sourceTree = "<group>"; };
 		CEDD66882635E75900ADA7D8 /* Partners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partners.swift; sourceTree = "<group>"; };
 		CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */,
 				CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */,
 				CEDD66882635E75900ADA7D8 /* Partners.swift */,
-				CEDD666E262CFAB500ADA7D8 /* PartnerViewController.swift */,
 				ACA8A12725DDF4750009C158 /* signUpViewController.swift */,
 				CE0DEB3E25DDB91000541B15 /* TabBarViewController.swift */,
 				CE0DEB2925DCF8B000541B15 /* Validation.swift */,
@@ -455,7 +452,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDD6608260D799A00ADA7D8 /* AppFormViewController.swift in Sources */,
-				CEDD666F262CFAB600ADA7D8 /* PartnerViewController.swift in Sources */,
 				CE0DEB2525DCE8EF00541B15 /* DesignableView.swift in Sources */,
 				CEDD66812635E3C000ADA7D8 /* PartnersCollectionViewController.swift in Sources */,
 				ACA8A0E025DCB8510009C158 /* AppDelegate.swift in Sources */,

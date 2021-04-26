@@ -11,6 +11,12 @@ private let reuseIdentifier = "Cell"
 
 class PartnersCollectionViewController: UICollectionViewController {
     
+    let yourAttributes: [NSAttributedString.Key: Any] = [
+              .font: UIFont.systemFont(ofSize: 13),
+              .foregroundColor: UIColor.black,
+              .underlineStyle: NSUnderlineStyle.single.rawValue
+          ]
+    
     private var partners : [Partners] = [ Partners(image: "Hope", name: "Hope Credit Union"),
                                         Partners(image: "Guaranty", name: "Guaranty Bank"),
                                         Partners(image: "Pathway", name: "Pathway Lending"),
@@ -22,27 +28,8 @@ class PartnersCollectionViewController: UICollectionViewController {
                                         ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-
-        // Do any additional setup after loading the view.
-        //let tap = UITapGestureRecognizer(target: self, action: Selector(("tapFunction:")));pLabel.addGestureRecognizer(tap)
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -59,43 +46,66 @@ class PartnersCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! PartnersCollectionViewCell
     
         // Configure the cell
-        let partner = partners[indexPath.row]
-        cell.pImage.image = UIImage(named: partner.image)
-        cell.pLabel.text = partner.name
+        cell.pButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cell.pButton.layer.shadowRadius = 3
+        cell.pButton.layer.shadowColor = UIColor.black.cgColor
+        cell.pButton.layer.shadowOpacity = 0.3
         
+        
+        let partner = partners[indexPath.row]
+        
+        let btnName = NSMutableAttributedString(
+                        string: partner.name,
+                       attributes: yourAttributes
+                    )
+        cell.pImage.image = UIImage(named: partner.image)
+        cell.pButton.setAttributedTitle(btnName, for: .normal)
         
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    
+    @IBAction func btnTapped(_ sender: UIButton) {
+        
+        let indexPath = collectionView.indexPathForCellContaining(view: sender)
+        
+        
+        
+        switch indexPath?.row {
+        case 0:
+            UIApplication.shared.open(NSURL(string: "https://hopecu.org/")! as URL)
+            break
+        case 1:
+            UIApplication.shared.open(NSURL(string: "https://gbtonline.com/")! as URL)
+            break
+        case 2:
+            UIApplication.shared.open(NSURL(string: "https://www.pathwaylending.org/")! as URL)
+            break
+        case 3:
+            UIApplication.shared.open(NSURL(string: "https://www.woodforest.com/")! as URL)
+            break
+        case 4:
+            UIApplication.shared.open(NSURL(string: "https://communitiesu.org/")! as URL)
+            break
+        case 5:
+            UIApplication.shared.open(NSURL(string: "https://www.kiva.org/")! as URL)
+            break
+        case 6:
+            UIApplication.shared.open(NSURL(string: "https://banksouthern.com/")! as URL)
+            break
+        case 7:
+            UIApplication.shared.open(NSURL(string: "https://www.innovate.ms/")! as URL)
+            break
+        default:
+            return
+        }
     }
-    */
 
 }
+extension UICollectionView {
+    func indexPathForCellContaining( view: UIButton) -> IndexPath? {
+        let viewCenter = self.convert(view.center, from: view.superview)
+        return self.indexPathForItem(at: viewCenter)
+    }
+}
+

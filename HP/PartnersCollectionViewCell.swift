@@ -10,5 +10,7 @@ import UIKit
 class PartnersCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var pImage: UIImageView!
-    @IBOutlet weak var pLabel: UILabel!
+    @IBOutlet weak var pButton: UIButton!
+    
+    
 }
