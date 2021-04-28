@@ -27,7 +27,7 @@
                                     <userLayoutGuide location="374" affinity="minX"/>
                                 </userGuides>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HigherPurposeLogo-1024" translatesAutoresizingMaskIntoConstraints="NO" id="OUF-VN-Q1F">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon" translatesAutoresizingMaskIntoConstraints="NO" id="OUF-VN-Q1F">
                                         <rect key="frame" x="8" y="8" width="374" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="New-4Q-xCy"/>
@@ -207,7 +207,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gx7-8b-rnf">
                                                 <rect key="frame" x="0.0" y="0.0" width="402" height="915.33333333333337"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HigherPurposeLogo-1024" translatesAutoresizingMaskIntoConstraints="NO" id="IQh-PR-qRh">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon" translatesAutoresizingMaskIntoConstraints="NO" id="IQh-PR-qRh">
                                                         <rect key="frame" x="0.0" y="60" width="402" height="150"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="EeL-dH-93a"/>
@@ -396,7 +396,6 @@
                                                                     <constraint firstAttribute="height" constant="50" id="UBx-iz-zSm"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                                <color key="tintColor" red="0.1321128607" green="0.52389442919999996" blue="0.60393542050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <state key="normal" title="Sign up">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -494,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hN-E6-ttL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="1327"/>
+            <point key="canvasLocation" x="74" y="1192"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="gbz-kK-LSH">
@@ -553,8 +552,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HigherPurposeLogo-1024" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-Qg-LBf">
-                                                <rect key="frame" x="-317" y="95" width="1024" height="128"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_icon" translatesAutoresizingMaskIntoConstraints="NO" id="e6b-Qg-LBf">
+                                                <rect key="frame" x="-2349.6666666666665" y="95" width="5089.333333333333" height="128"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -997,15 +996,21 @@
                     <navigationItem key="navigationItem" title="Apply" id="1G7-QX-wPV"/>
                     <size key="freeformSize" width="390" height="1350"/>
                     <connections>
+                        <outlet property="addressField" destination="2Nz-ED-arK" id="3Yo-6d-0QW"/>
                         <outlet property="bizAgeDD" destination="VsT-zh-1Fb" id="RoH-yQ-WW9"/>
                         <outlet property="bizCatDD" destination="nzp-PE-9iA" id="GA6-Z1-v23"/>
                         <outlet property="bizTypeDD" destination="5XD-Hy-kCM" id="lro-Ip-doH"/>
                         <outlet property="businessTextView" destination="cXh-xU-7f3" id="phN-lH-K1n"/>
                         <outlet property="creditDD" destination="Y9E-Ry-pLk" id="QtQ-Xn-7uu"/>
+                        <outlet property="emailField" destination="sxk-GT-IgF" id="oOL-Q5-2nl"/>
                         <outlet property="estBizDD" destination="gHf-TP-WRd" id="WTd-Ys-R7g"/>
+                        <outlet property="estBizField" destination="gHf-TP-WRd" id="aVo-an-qXm"/>
                         <outlet property="fundingDD" destination="T2q-Xe-snJ" id="Bas-2e-aRt"/>
                         <outlet property="fundsTextView" destination="qtX-tD-gZk" id="AgH-aC-Q0F"/>
                         <outlet property="genderDD" destination="NFy-Ad-OwN" id="I9b-qq-oE4"/>
+                        <outlet property="genderField" destination="NFy-Ad-OwN" id="ZTf-aQ-4Uo"/>
+                        <outlet property="nameField" destination="ONe-2u-qwQ" id="x4i-bj-MyA"/>
+                        <outlet property="numField" destination="PtU-wg-8Uk" id="GW5-Ww-Yr0"/>
                         <outlet property="stateDD" destination="PqA-Mi-vUG" id="lvm-pv-joL"/>
                     </connections>
                 </viewController>
@@ -1021,6 +1026,7 @@
                         <imageReference key="image" image="person" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="iKe-HZ-w2s"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBD-eb-sWh">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1035,8 +1041,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HigherPurposeLogo-1024" width="1024" height="1024"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="launch_icon" width="5089" height="4351"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="personalhotspot" catalog="system" width="128" height="75"/>

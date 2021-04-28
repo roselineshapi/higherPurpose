@@ -21,7 +21,16 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var businessTextView: UITextView!
     @IBOutlet weak var fundsTextView: UITextView!
     
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var genderField: UITextField!
+    @IBOutlet weak var addressField: UITextField!
+    @IBOutlet weak var numField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var estBizField: UITextField!
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let selection : UIColor = UIColor(red: 0, green: 0.4745, blue: 0.549, alpha: 1.0)
         
@@ -90,7 +99,8 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
         fundsTextView.delegate = self
         
         
-        
+        let name = nameField.text
+        let gender = genderField.text
     }
     
     

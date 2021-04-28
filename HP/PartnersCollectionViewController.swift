@@ -27,6 +27,7 @@ class PartnersCollectionViewController: UICollectionViewController {
                                         Partners(image: "Innovate", name: "Innovate Mississippi")
                                         ]
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         
     }
@@ -35,8 +36,7 @@ class PartnersCollectionViewController: UICollectionViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return partners.count
@@ -51,7 +51,6 @@ class PartnersCollectionViewController: UICollectionViewController {
         cell.pButton.layer.shadowColor = UIColor.black.cgColor
         cell.pButton.layer.shadowOpacity = 0.3
         
-        
         let partner = partners[indexPath.row]
         
         let btnName = NSMutableAttributedString(
@@ -64,13 +63,10 @@ class PartnersCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    
     @IBAction func btnTapped(_ sender: UIButton) {
         
         let indexPath = collectionView.indexPathForCellContaining(view: sender)
-        
-        
-        
+
         switch indexPath?.row {
         case 0:
             UIApplication.shared.open(NSURL(string: "https://hopecu.org/")! as URL)
@@ -100,7 +96,6 @@ class PartnersCollectionViewController: UICollectionViewController {
             return
         }
     }
-
 }
 extension UICollectionView {
     func indexPathForCellContaining( view: UIButton) -> IndexPath? {

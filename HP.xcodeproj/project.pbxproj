@@ -14,7 +14,6 @@
 		ACA8A0E025DCB8510009C158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */; };
 		ACA8A0E225DCB8510009C158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */; };
 		ACA8A0E925DCB8520009C158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0E825DCB8520009C158 /* Assets.xcassets */; };
-		ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboad in Resources */ = {isa = PBXBuildFile; fileRef = ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */; };
 		ACA8A0F725DCB8520009C158 /* HPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A0F625DCB8520009C158 /* HPTests.swift */; };
 		ACA8A10225DCB8520009C158 /* HPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A10125DCB8520009C158 /* HPUITests.swift */; };
 		ACA8A12825DDF4750009C158 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A12725DDF4750009C158 /* signUpViewController.swift */; };
@@ -30,6 +29,7 @@
 		CEDD66812635E3C000ADA7D8 /* PartnersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */; };
 		CEDD66892635E75900ADA7D8 /* Partners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD66882635E75900ADA7D8 /* Partners.swift */; };
 		CEDD668E2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */; };
+		CEDD66CE2638817200ADA7D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDD66CD2638817200ADA7D8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		ACA8A0DF25DCB8510009C158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA8A0E125DCB8510009C158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACA8A0E825DCB8520009C158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACA8A0EB25DCB8520009C158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/LaunchScreen.storyboad; sourceTree = "<group>"; };
 		ACA8A0ED25DCB8520009C158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA8A0F225DCB8520009C158 /* HPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8A0F625DCB8520009C158 /* HPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPTests.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewController.swift; sourceTree = "<group>"; };
 		CEDD66882635E75900ADA7D8 /* Partners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partners.swift; sourceTree = "<group>"; };
 		CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEDD66CD2638817200ADA7D8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1930C6B0E75F599FEF8658F /* Pods_HP_HPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP_HPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.debug.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +167,7 @@
 				CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */,
 				CEDD6607260D799A00ADA7D8 /* AppFormViewController.swift */,
 				CEDD664C262BDACA00ADA7D8 /* Main.storyboard */,
+				CEDD66CD2638817200ADA7D8 /* LaunchScreen.storyboard */,
 				CEDD66802635E3C000ADA7D8 /* PartnersCollectionViewController.swift */,
 				CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */,
 				CEDD66882635E75900ADA7D8 /* Partners.swift */,
@@ -175,7 +176,6 @@
 				CE0DEB2925DCF8B000541B15 /* Validation.swift */,
 				ACA8A0E825DCB8520009C158 /* Assets.xcassets */,
 				ACA8A12C25DE07E00009C158 /* GoogleService-Info.plist */,
-				ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */,
 				ACA8A0ED25DCB8520009C158 /* Info.plist */,
 			);
 			path = HP;
@@ -320,8 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA8A0EC25DCB8520009C158 /* LaunchScreen.storyboad in Resources */,
 				ACA8A12D25DE07E00009C158 /* GoogleService-Info.plist in Resources */,
+				CEDD66CE2638817200ADA7D8 /* LaunchScreen.storyboard in Resources */,
 				ACA8A0E925DCB8520009C158 /* Assets.xcassets in Resources */,
 				CEDD664D262BDACA00ADA7D8 /* Main.storyboard in Resources */,
 			);
@@ -498,17 +498,6 @@
 			targetProxy = ACA8A0FE25DCB8520009C158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		ACA8A0EA25DCB8520009C158 /* LaunchScreen.storyboad */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACA8A0EB25DCB8520009C158 /* Base */,
-			);
-			name = LaunchScreen.storyboad;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACA8A10425DCB8520009C158 /* Debug */ = {
