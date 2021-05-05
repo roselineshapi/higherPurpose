@@ -27,6 +27,7 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var estBizField: UITextField!
     
+    @IBOutlet weak var creditScoreField: UITextField!
     
     override func viewDidLoad() {
         
@@ -131,9 +132,98 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
             textView.font = UIFont(name: "verdana", size: 13.0)
         }
     }
+    func validateFields() ->String? {
+            //check all the fields are filled in
+        if nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            genderDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            addressField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            numField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            estBizDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            stateDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            bizAgeDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            bizTypeDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            bizCatDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            creditScoreField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            fundingDD.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            print("hello")
+            return "Please fill in all fields."
+        }
     
+        let cleanedEmail = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+    
+        if Utilities.isValidEmail(cleanedEmail) == false{
+            return "Please make sure your email address is valid."
+        }
+        let creditScoreValue:Int? = Int(creditScoreField.text!)!
+        if ( creditScoreValue! < 300 || creditScoreValue! > 850){
+            return "Credit score is invalid."
+        }
+        return nil
+}
   
 
+    @IBAction func clickApplyButton(_ sender: Any) {
+        let error = validateFields()
+        if error != nil {
+        // There's something wrong with the fields, show error message
+//            showError(error!)
+           let alertController = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+           let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+           alertController.addAction(defaultAction)
+           self.present(alertController, animated: true, completion: nil)
+      }else {
+                   //validate user input
+           let email = (emailField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let name = (nameField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let gender = (genderField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let address = (addressField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let phoneNum = (numField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let estBiz = (estBizField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let businessName = (businessTextView.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let state = (stateDD.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let businessAge = (bizAgeDD.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let businessType = (bizTypeDD.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let businessCategory = (bizCatDD.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+//            let creditScore = (creditDD.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let fundingAmount = (fundingDD.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+           let creditScoreValue:Int? = Int(creditScoreField.text!)!
+           //declare and initialize a dictionary:
+           var creditScoreDic: [Int: [String]] = [600:["Gurantee Bank", "Hope Credit Union"], 610:["Pathway lending"]]
+          
+           var locationDic: [String: [String]] = ["Al": ["Hope Credit Union"],
+                                                "KA":["Hope Credit Union"],
+                                                "MS":["Hope Credit Union", "Pathway Lending"],
+                                                "TN":["Hope Credit Union"]]
+           
+           var matchedCompanies = Set<String>()
+           for (key,value) in creditScoreDic {
+               if(key <= creditScoreValue!){
+                   for item in value   {
+                       matchedCompanies.insert(item)
+                   }
+                
+               }
+
+           }
+                   
+           for(key, value) in locationDic {
+               if(key == state  ){
+                   for item in value {
+                       matchedCompanies.insert(item)
+                   }
+               }
+           }
+                   
+           for grantor  in matchedCompanies {
+               print(grantor)
+           }
+       }
+               
+
+    }
+    
+    
     /*
     // MARK: - Navigation
 

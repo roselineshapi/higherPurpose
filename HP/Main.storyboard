@@ -911,6 +911,9 @@
                                                         <integer key="value" value="30"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickApplyButton:" destination="wBe-KS-45t" eventType="touchUpInside" id="wLo-Ag-ugs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1001,6 +1004,7 @@
                         <outlet property="bizCatDD" destination="nzp-PE-9iA" id="GA6-Z1-v23"/>
                         <outlet property="bizTypeDD" destination="5XD-Hy-kCM" id="lro-Ip-doH"/>
                         <outlet property="businessTextView" destination="cXh-xU-7f3" id="phN-lH-K1n"/>
+                        <outlet property="creditScoreField" destination="Y9E-Ry-pLk" id="W8j-0H-soz"/>
                         <outlet property="emailField" destination="sxk-GT-IgF" id="oOL-Q5-2nl"/>
                         <outlet property="estBizDD" destination="gHf-TP-WRd" id="WTd-Ys-R7g"/>
                         <outlet property="estBizField" destination="gHf-TP-WRd" id="aVo-an-qXm"/>
