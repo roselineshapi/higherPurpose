@@ -51,8 +51,8 @@
 
 /* Begin PBXFileReference section */
 		0A6FBB7D14198519AA32BA18 /* Pods_HP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10087C7E5A3979D3F5FCB338 /* Pods-HP-HPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.debug.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2B455210AE46401006C01425 /* Pods-HP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.release.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.release.xcconfig"; sourceTree = "<group>"; };
+		301B6917C99C35A22955641C /* Pods-HP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.release.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.release.xcconfig"; sourceTree = "<group>"; };
+		979F0D4C5447CFB4437DAA66 /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A134B2497BC05D556F8F4664 /* Pods_HPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC878E2C25E49B7F00122D31 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		ACA8A0DC25DCB8510009C158 /* HP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,8 +68,8 @@
 		ACA8A10325DCB8520009C158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA8A12725DDF4750009C158 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		ACA8A12C25DE07E00009C158 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B9153032EEC34161A1D84F9F /* Pods-HPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.release.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF5A7AD8F387028A2A615450 /* Pods-HP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.debug.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.debug.xcconfig"; sourceTree = "<group>"; };
+		B294884DC2D6CBEBC8923651 /* Pods-HP-HPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.debug.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0DB08CC3E6109E359EEB030 /* Pods-HP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP.debug.xcconfig"; path = "Target Support Files/Pods-HP/Pods-HP.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0DEB1F25DCE23600541B15 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CE0DEB2425DCE8EF00541B15 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		CE0DEB2925DCF8B000541B15 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		CEDD668D2635EE9700ADA7D8 /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEDD66CD2638817200ADA7D8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1930C6B0E75F599FEF8658F /* Pods_HP_HPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HP_HPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.debug.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HP-HPUITests.release.xcconfig"; path = "Target Support Files/Pods-HP-HPUITests/Pods-HP-HPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1A5ADFBF33F25FD5E55C3EC /* Pods-HPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.debug.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9D0CA5C3E8C6AC97DD3612F /* Pods-HPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPTests.release.xcconfig"; path = "Target Support Files/Pods-HPTests/Pods-HPTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +115,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FAF1296AF01B6CA3363C31B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB08CC3E6109E359EEB030 /* Pods-HP.debug.xcconfig */,
+				301B6917C99C35A22955641C /* Pods-HP.release.xcconfig */,
+				B294884DC2D6CBEBC8923651 /* Pods-HP-HPUITests.debug.xcconfig */,
+				979F0D4C5447CFB4437DAA66 /* Pods-HP-HPUITests.release.xcconfig */,
+				D1A5ADFBF33F25FD5E55C3EC /* Pods-HPTests.debug.xcconfig */,
+				F9D0CA5C3E8C6AC97DD3612F /* Pods-HPTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		320F41E5EF6C93AB574F2FCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +155,8 @@
 				ACA8A0F525DCB8520009C158 /* HPTests */,
 				ACA8A10025DCB8520009C158 /* HPUITests */,
 				ACA8A0DD25DCB8510009C158 /* Products */,
-				F86863F47B09C4B05FA825E3 /* Pods */,
 				320F41E5EF6C93AB574F2FCE /* Frameworks */,
+				0FAF1296AF01B6CA3363C31B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,19 +211,6 @@
 				ACA8A10325DCB8520009C158 /* Info.plist */,
 			);
 			path = HPUITests;
-			sourceTree = "<group>";
-		};
-		F86863F47B09C4B05FA825E3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BF5A7AD8F387028A2A615450 /* Pods-HP.debug.xcconfig */,
-				2B455210AE46401006C01425 /* Pods-HP.release.xcconfig */,
-				10087C7E5A3979D3F5FCB338 /* Pods-HP-HPUITests.debug.xcconfig */,
-				F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */,
-				DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */,
-				B9153032EEC34161A1D84F9F /* Pods-HPTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,7 +619,7 @@
 		};
 		ACA8A10725DCB8520009C158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5A7AD8F387028A2A615450 /* Pods-HP.debug.xcconfig */;
+			baseConfigurationReference = C0DB08CC3E6109E359EEB030 /* Pods-HP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -640,7 +641,7 @@
 		};
 		ACA8A10825DCB8520009C158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B455210AE46401006C01425 /* Pods-HP.release.xcconfig */;
+			baseConfigurationReference = 301B6917C99C35A22955641C /* Pods-HP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -662,7 +663,7 @@
 		};
 		ACA8A10A25DCB8520009C158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA479415618C226F6CA13E39 /* Pods-HPTests.debug.xcconfig */;
+			baseConfigurationReference = D1A5ADFBF33F25FD5E55C3EC /* Pods-HPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,7 +686,7 @@
 		};
 		ACA8A10B25DCB8520009C158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9153032EEC34161A1D84F9F /* Pods-HPTests.release.xcconfig */;
+			baseConfigurationReference = F9D0CA5C3E8C6AC97DD3612F /* Pods-HPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -708,7 +709,7 @@
 		};
 		ACA8A10D25DCB8520009C158 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10087C7E5A3979D3F5FCB338 /* Pods-HP-HPUITests.debug.xcconfig */;
+			baseConfigurationReference = B294884DC2D6CBEBC8923651 /* Pods-HP-HPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -729,7 +730,7 @@
 		};
 		ACA8A10E25DCB8520009C158 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F68CF1E0424C6155AC44119D /* Pods-HP-HPUITests.release.xcconfig */;
+			baseConfigurationReference = 979F0D4C5447CFB4437DAA66 /* Pods-HP-HPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

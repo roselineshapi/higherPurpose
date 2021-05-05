@@ -16,7 +16,6 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var bizAgeDD: DropDown!
     @IBOutlet weak var bizTypeDD: DropDown!
     @IBOutlet weak var bizCatDD: DropDown!
-    @IBOutlet weak var creditDD: DropDown!
     @IBOutlet weak var fundingDD: DropDown!
     @IBOutlet weak var businessTextView: UITextView!
     @IBOutlet weak var fundsTextView: UITextView!
@@ -41,7 +40,6 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
         bizAgeDD.selectedRowColor = selection
         bizTypeDD.selectedRowColor = selection
         bizCatDD.selectedRowColor = selection
-        creditDD.selectedRowColor = selection
         fundingDD.selectedRowColor = selection
         
         
@@ -52,7 +50,6 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
         bizAgeDD.arrowSize = 10
         bizTypeDD.arrowSize = 10
         bizCatDD.arrowSize = 10
-        creditDD.arrowSize = 10
         fundingDD.arrowSize = 10
     
         
@@ -64,7 +61,7 @@ class AppFormViewController: UIViewController, UITextViewDelegate {
         bizAgeDD.optionArray = ["0-5 Years", "5-10 Years", "10-20 Years", "Over 20 Years"]
         bizTypeDD.optionArray = ["Coporate(Inc.)", "Limited Liability Company(LLC)", "General Partnership", "Limited Liability Partnership(LLP)", "Sole Proprietorship", "Other"]
         bizCatDD.optionArray = ["Food/Agriculture", "Education", "Health/Wellness", "Art/Culture"]
-        creditDD.optionArray = ["300-599", "600-649", "650-699", "700-749", "750-799", "800-850"]
+       
         fundingDD.optionArray = ["$0-$10,000", "$10,000-$30,000", "$30,000-$75,000", "$75,000-$100,000", "$100,000-$300,000", "$300,000-$500,000", "$500,000+"]
         //Its Id Values and its optional
 //        genderDD.optionIds = [1,23,54,22]
